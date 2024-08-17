@@ -1,0 +1,124 @@
+.employee-form-popup {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color:#00000090;
+    display: grid;
+}
+
+.employee-form-container {
+    place-self: center;
+    width: max(70vw, 600px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 25px 30px;
+    border-radius: 8px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+
+}
+
+.employee-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--brown);
+}
+
+.employee-form-header .cross-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.employee-form-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.employee-form-input-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.employee-form-input-container select,
+.employee-form-input-container input {
+    outline: none;
+    border: 1px solid #c9c9c9;
+    padding: 10px;
+    border-radius: 4px;
+    max-width: 400px;
+}
+
+.employee-form-input-container select{
+    margin-top: 10px;
+}
+
+.add-img {
+    grid-column: span 2; 
+    width: 120px;
+    height: 80px;
+    display: flex;
+    flex-direction: start;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.add-img img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (min-width: 900px) {
+    .employee-form-inputs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .employee-form-input-container {
+        margin-bottom: 0;
+    }
+}
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.add-btn{
+    max-width: 120px;
+    border: none;
+    padding: 10px;
+    background-color: rgb(52, 52, 208);
+    color: white;
+    cursor: pointer;
+    margin-top: 20px;
+
+}
+.employee-form-condition {
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+}
+
+.employee-form-condition input {
+    margin-top: 5px;
+}
+
+.employee-form-popup p span {
+    color: var(--brown);
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+
