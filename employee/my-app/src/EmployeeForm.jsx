@@ -32,7 +32,7 @@ const EmployeeForm = () => {
                 endDate: selectedEmployee.endDate ? new Date(selectedEmployee.endDate).toISOString().split('T')[0] : '',
             };
             setEmployee(formattedEmployee);
-            setImagePreview(`http://localhost:4000/uploads/${selectedEmployee.image}` || uploadImg);
+            setImagePreview(selectedEmployee.image || uploadImg);
         }
     }, [selectedEmployee]);
     
