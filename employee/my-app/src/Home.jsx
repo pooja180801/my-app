@@ -54,7 +54,7 @@ const EmployeeList = () => {
                     {employees?.map(employee => (
                         <tr key={employee._id}>
                             <td>{employee._id}</td>
-                            <td><img src={`http://localhost:4000/uploads/${employee.image}`} alt="Employee" style={{ width: '50px', height: '50px' }} /></td>
+                            <td><img src={employee.image} alt="Employee" style={{ width: '50px', height: '50px' }} /></td>
                             <td>{employee.name}</td>
                             <td>{employee.jobRole}</td>
                             <td>{new Date(employee.dob).toLocaleDateString()}</td>
