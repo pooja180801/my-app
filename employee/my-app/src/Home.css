@@ -37,10 +37,10 @@ button {
 }
 
 table {
-    max-width: 100%;
+    width: 100%;
     margin: 20px 0;
     border-collapse: collapse;
-    
+    table-layout: fixed;
 }
 
 table, th, td {
@@ -50,9 +50,8 @@ table, th, td {
 th, td {
     padding: 12px;
     text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    white-space: normal; 
+    word-wrap: break-word; 
 }
 
 th {
@@ -64,16 +63,16 @@ tr:nth-child(even) {
     background-color: #bebaba;
 }
 
+.buttons {
+    display: flex;
+    flex-direction: row;
+}
+
 button.edit-btn {
     color: #28a745;
     margin-right: 10px;
 }
 
 button.delete-btn {
-   color: #dc3545;
-}
-
-.buttons{
-    display: flex;
-    flex-direction: row;
+    color: #dc3545;
 }
